@@ -4,6 +4,8 @@ const cors = require('cors')
 const MongoCLient = require('mongodb').MongoClient
 require('dotenv').config()
 
+const PORT = 8000
+
 
 //declare varibles that i will use to connect the back end 
 let db,
@@ -18,3 +20,9 @@ let db,
         db =  client.db(dbName)
         collection = db.collection('movies')
     })
+
+
+//connect it to the port (this is using express)
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`sever is running on port `)
+})
