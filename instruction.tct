@@ -13,6 +13,11 @@ add ,env file to gitignore
 
 6 set middleware helps with the data going back and forth from the db to the server , put middleware piro to any crud fucntianlity
 
-7 create public and views folder - add main.js 
+7 create public and views folder - add main.js and style.css to public and index.ejs to views
+
+9. add content to main js , style.css , index.ejs
+
+
+10create heroku and push 
 
 test mongo and port connection   
