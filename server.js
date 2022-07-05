@@ -20,7 +20,13 @@ let db,
         db =  client.db(dbName)
         collection = db.collection('movies')
     })
-
+//middleware
+app.set('view engine', 'ejs')//adding ejs to our to machine
+app.use(express.static('public'))//setting some external files , serve up all the files from the public folder
+app.use(express.urlencoded({extended:true}))//helps us halnded url 
+app.use(express.json())
+app.use(cors())
+//middleware
 
 //connect it to the port (this is using express)
 app.listen(process.env.PORT || PORT, () => {

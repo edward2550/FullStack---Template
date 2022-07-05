@@ -11,7 +11,7 @@ add ,env file to gitignore
 
 5 create port
 
-6 set middleware
+6 set middleware helps with the data going back and forth from the db to the server , put middleware piro to any crud fucntianlity
 
 7 create public and views folder - add main.js 
 
